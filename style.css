@@ -1,0 +1,79 @@
+/* UTILS */
+
+.shop-padding {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.btn-aqua {
+    background-color: #27EFE3;
+}
+
+.bg-grey {
+    background-color: #C7C7C7 !important;
+}
+
+.bg-scary {
+    background-color: #02484D;
+}
+
+.hero-banner {
+    min-height: 65vh;
+    background-image: url("https://images.unsplash.com/photo-1584118325355-7e7d7d7265a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    /* NOTE for background-image.... we use 'background' for manipulating the image orientation */
+    background-position: center;
+    background-size: cover;
+}
+
+.glass-card {
+    background-color: rgba(14, 122, 182, 0.2);
+}
+
+.shop-nav {
+    min-height: 25vh;
+}
+
+.info-card-center {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.turtle-img {
+    height: 200px;
+    width: 200px;
+    /* NOTE for img tags.... we use 'object' for manipulating the image orientation */
+    object-fit: cover;
+    object-position: center;
+}
+
+.adopt-btn {
+    position: absolute;
+    bottom: 32px;
+}
+
+
+
+@media (max-width:768px) {
+    .hero-banner {
+        background-image: url("https://images.unsplash.com/photo-1500147409972-9e9acbce5167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    }
+
+    .glass-card {
+        color: white;
+    }
+
+    .info-card-center {
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        border-right: none;
+        border-left: none;
+    }
+
+    .info-card-end {
+        order: -2;
+    }
+
+    .info-card-center {
+        order: -1;
+    }
+}
